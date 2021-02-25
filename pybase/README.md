@@ -10,3 +10,5 @@ conda config --show channels
 conda env export > environment.yml
 pip install msl-loadlib
 conda remove --name myenv --all
+
+pydirectinput
