@@ -8,3 +8,4 @@
 
 go fmt ldser/...                                                                                                                 ✔  1336  16:56:51
 gofmt -w .  
+go env -w GOARCH=386

@@ -20,13 +20,13 @@ var (
 	procSetDllPathW = dmReg32.NewProc("SetDllPathW")
 )
 
-// DamoService ...
+// 大漠类型申明
 type DamoService struct {
 	dm       *ole.IDispatch
 	IUnknown *ole.IUnknown
 }
 
-// New return *DamoService.DamoService
+// 初始化实例
 func New() (dm *DamoService, err error) {
 	var com DamoService
 	// 创建对象
@@ -50,7 +50,7 @@ func (com *DamoService) Release() {
 	ole.CoUninitialize()
 }
 
-// SetDllPathA Ascii
+// 注册插件
 func SetDllPathA(path string, mode int) bool {
 	var _p0 *uint16
 	_p0, _ = syscall.UTF16PtrFromString(path)
@@ -58,7 +58,7 @@ func SetDllPathA(path string, mode int) bool {
 	return ret != 0
 }
 
-// SetDllPathW Unicode
+// 注册插件
 func SetDllPathW(path string, mode int) bool {
 	var _p0 *uint16
 	_p0, _ = syscall.UTF16PtrFromString(path)
@@ -66,6 +66,7 @@ func SetDllPathW(path string, mode int) bool {
 	return ret != 0
 }
 
+// 版本号
 func (com *DamoService) Ver() string {
 	ver, _ := com.dm.CallMethod("Ver")
 	return ver.ToString()

@@ -34,7 +34,7 @@ type YLJSService struct {
 }
 
 func New() (yljs *YLJSService, err error) {
-	      return &YLJSService{dll: dll}, nil
+	return &YLJSService{dll: dll}, nil
 }
 
 func (yljs YLJSService) Release() (uintptr, uintptr, error) {
@@ -47,14 +47,13 @@ func (yljs YLJSService) GetModel() string {
 	Release := yljs.dll.NewProc("GetSerialNumber")
 	r1, _, _ := Release.Call()
 
-
 	p := (*byte)(unsafe.Pointer(r1))
 	// define a slice to fill with the p string
 	data := make([]byte, 0)
 
 	// loop until find '\0'
 	for *p != 0 {
-		data = append(data, *p)        // append 1 byte
+		data = append(data, *p)         // append 1 byte
 		r1 += unsafe.Sizeof(byte(0))    // move r to next byte
 		p = (*byte)(unsafe.Pointer(r1)) // get the byte value
 	}
