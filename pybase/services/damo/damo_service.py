@@ -7,3 +7,24 @@ class DamoService(Client64):
 
     def ver(self):
         return self.request32('ver')
+
+    def Reg(self, key: str, version: str):
+        return self.request32('Reg', key, version)
+
+    # 窗口
+    def FindWindowEx(self, parent: int, class_name: str, title: str):
+        return self.request32('FindWindowEx', parent, class_name, title)
+
+    def GetBindWindow(self) -> int:
+        return self.request32('GetBindWindow')
+
+    # 后台设置
+    def BindWindowEx(self, hwnd: int, display: str, mouse: str, keypad: str, public: str, mode: int):
+        return self.request32('BindWindowEx', hwnd, display, mouse, keypad, public, mode)
+
+    def GetWindowClass(self, hwnd: int) -> str:
+        return self.request32('GetWindowClass', hwnd)
+
+    # 图色
+    def FindPicEx(self, x1, y1, x2, y2: int, pic_name: str, delta_color: str, sim: float, _dir: int):
+        return self.request32('FindPicEx', x1, y1, x2, y2, pic_name, delta_color, sim, _dir)
