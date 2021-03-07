@@ -4,6 +4,6 @@
 #include <atlbase.h>
 #include <iostream>
 
-#import "C:\Users\ysh35\Downloads\dm\7.2107\dm.dll" no_namespace
+#import "C:\Users\ysh35\Desktop\GMTOOLS\dm\dm.dll" no_namespace
 
 std::string runDm();

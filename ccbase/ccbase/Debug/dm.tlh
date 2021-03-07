@@ -1,9 +1,9 @@
-﻿// Created by Microsoft (R) C/C++ Compiler Version 14.28.29337.0 (3192788a).
+﻿// Created by Microsoft (R) C/C++ Compiler Version 14.29.29917.0 (4bd5afdb).
 //
-// C:\Users\ysh35\Wss\gmbots\gbase\ccbase\ccbase\Debug\dm.tlh
+// D:\Wss\gmbots\gbase\ccbase\ccbase\Debug\dm.tlh
 //
-// C++ source equivalent of Win32 type library C:\Users\ysh35\Downloads\dm\7.2107\dm.dll
-// compiler-generated file created 02/25/21 at 14:39:19 - DO NOT EDIT!
+// C++ source equivalent of Win32 type library C:\Users\ysh35\Desktop\GMTOOLS\dm\dm.dll
+// compiler-generated file created 03/06/21 at 13:53:37 - DO NOT EDIT!
 
 #pragma once
 #pragma pack(push, 8)
@@ -3346,6 +3346,6 @@ Idmsoft : IDispatch
 // Wrapper method implementations
 //
 
-#include "C:\Users\ysh35\Wss\gmbots\gbase\ccbase\ccbase\Debug\dm.tli"
+#include "D:\Wss\gmbots\gbase\ccbase\ccbase\Debug\dm.tli"
 
 #pragma pack(pop)
