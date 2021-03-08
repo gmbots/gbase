@@ -1,9 +1,9 @@
-﻿// Created by Microsoft (R) C/C++ Compiler Version 14.29.29917.0 (4bd5afdb).
+﻿// Created by Microsoft (R) C/C++ Compiler Version 14.28.29337.0 (bd5221f8).
 //
-// D:\Wss\gmbots\gbase\ccbase\ccbase\Debug\dm.tlh
+// C:\Users\ysh35\Wss\gmbots\gbase\ccbase\ccbase\Debug\dm.tlh
 //
-// C++ source equivalent of Win32 type library C:\Users\ysh35\Desktop\GMTOOLS\dm\dm.dll
-// compiler-generated file created 03/06/21 at 13:53:37 - DO NOT EDIT!
+// C++ source equivalent of Win32 type library C:/Users/ysh35/OneDrive/sync/gbtools/DLLs/x32/dm.dll
+// compiler-generated file created 03/08/21 at 12:57:00 - DO NOT EDIT!
 
 #pragma once
 #pragma pack(push, 8)
@@ -603,8 +603,7 @@ Idmsoft : IDispatch
         _bstr_t keypad,
         _bstr_t public_desc,
         long mode );
-    _bstr_t GetDiskSerial (
-        long index );
+    _bstr_t GetDiskSerial ( );
     _bstr_t Md5 (
         _bstr_t str );
     _bstr_t GetMac ( );
@@ -1464,29 +1463,6 @@ Idmsoft : IDispatch
     long ShowTaskBarIcon (
         long hwnd,
         long is_show );
-    long AsmSetTimeout (
-        long time_out,
-        long param );
-    _bstr_t DmGuardParams (
-        _bstr_t cmd,
-        _bstr_t sub_cmd,
-        _bstr_t param );
-    long GetModuleSize (
-        long hwnd,
-        _bstr_t module_name );
-    long IsSurrpotVt ( );
-    _bstr_t GetDiskModel (
-        long index );
-    _bstr_t GetDiskReversion (
-        long index );
-    long EnableFindPicMultithread (
-        long en );
-    long GetCpuUsage ( );
-    long GetMemoryUsage ( );
-    _bstr_t Hex32 (
-        long v );
-    _bstr_t Hex64 (
-        __int64 v );
 
     //
     // Raw methods provided by interface
@@ -2208,7 +2184,6 @@ Idmsoft : IDispatch
         /*[in]*/ long mode,
         /*[out,retval]*/ long * ret ) = 0;
       virtual HRESULT __stdcall raw_GetDiskSerial (
-        /*[in]*/ long index,
         /*[out,retval]*/ BSTR * ret ) = 0;
       virtual HRESULT __stdcall raw_Md5 (
         /*[in]*/ BSTR str,
@@ -3306,46 +3281,12 @@ Idmsoft : IDispatch
         /*[in]*/ long hwnd,
         /*[in]*/ long is_show,
         /*[out,retval]*/ long * ret ) = 0;
-      virtual HRESULT __stdcall raw_AsmSetTimeout (
-        /*[in]*/ long time_out,
-        /*[in]*/ long param,
-        /*[out,retval]*/ long * ret ) = 0;
-      virtual HRESULT __stdcall raw_DmGuardParams (
-        /*[in]*/ BSTR cmd,
-        /*[in]*/ BSTR sub_cmd,
-        /*[in]*/ BSTR param,
-        /*[out,retval]*/ BSTR * ret ) = 0;
-      virtual HRESULT __stdcall raw_GetModuleSize (
-        /*[in]*/ long hwnd,
-        /*[in]*/ BSTR module_name,
-        /*[out,retval]*/ long * ret ) = 0;
-      virtual HRESULT __stdcall raw_IsSurrpotVt (
-        /*[out,retval]*/ long * ret ) = 0;
-      virtual HRESULT __stdcall raw_GetDiskModel (
-        /*[in]*/ long index,
-        /*[out,retval]*/ BSTR * ret ) = 0;
-      virtual HRESULT __stdcall raw_GetDiskReversion (
-        /*[in]*/ long index,
-        /*[out,retval]*/ BSTR * ret ) = 0;
-      virtual HRESULT __stdcall raw_EnableFindPicMultithread (
-        /*[in]*/ long en,
-        /*[out,retval]*/ long * ret ) = 0;
-      virtual HRESULT __stdcall raw_GetCpuUsage (
-        /*[out,retval]*/ long * ret ) = 0;
-      virtual HRESULT __stdcall raw_GetMemoryUsage (
-        /*[out,retval]*/ long * ret ) = 0;
-      virtual HRESULT __stdcall raw_Hex32 (
-        /*[in]*/ long v,
-        /*[out,retval]*/ BSTR * ret ) = 0;
-      virtual HRESULT __stdcall raw_Hex64 (
-        /*[in]*/ __int64 v,
-        /*[out,retval]*/ BSTR * ret ) = 0;
 };
 
 //
 // Wrapper method implementations
 //
 
-#include "D:\Wss\gmbots\gbase\ccbase\ccbase\Debug\dm.tli"
+#include "C:\Users\ysh35\Wss\gmbots\gbase\ccbase\ccbase\Debug\dm.tli"
 
 #pragma pack(pop)
