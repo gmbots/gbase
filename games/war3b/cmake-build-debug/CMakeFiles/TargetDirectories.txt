@@ -1,0 +1,3 @@
+D:/Wss/gmbots/gbase/games/war3b/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/Wss/gmbots/gbase/games/war3b/cmake-build-debug/CMakeFiles/war3b.dir
+D:/Wss/gmbots/gbase/games/war3b/cmake-build-debug/CMakeFiles/rebuild_cache.dir

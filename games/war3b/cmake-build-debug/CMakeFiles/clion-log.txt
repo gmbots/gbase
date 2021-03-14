@@ -1,0 +1,4 @@
+D:\ProgramFiles\JetBrains\CLion\bin\cmake\win\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -DCMAKE_TOOLCHAIN_FILE=D:/App/vcpkg/scripts/buildsystems/vcpkg.cmake -G "CodeBlocks - NMake Makefiles" D:\Wss\gmbots\gbase\games\war3b
+-- Configuring done
+-- Generating done
+-- Build files have been written to: D:/Wss/gmbots/gbase/games/war3b/cmake-build-debug

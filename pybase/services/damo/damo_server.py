@@ -35,6 +35,17 @@ class DamoServer(Server32):
     def GetWindowClass(self, hwnd: int) -> str:
         return self.lib.GetWindowClass(hwnd)
 
-    # 图色
-    def FindPicEx(self, x1, y1, x2, y2: int, pic_name: str, delta_color: str, sim: float, _dir: int):
+    def GetClientSize(self, hwnd: int) -> (int, int, int):
+        return self.lib.GetClientSize(hwnd)
+
+        # 图色
+
+    def FindPicEx(self, x1, y1, x2, y2: int, pic_name: str, delta_color: str, sim: float, _dir: int) -> str:
         return self.lib.FindPicEx(x1, y1, x2, y2, pic_name, delta_color, sim, _dir)
+
+    # 键鼠
+    def MoveTo(self, x, y: int) -> float:
+        return self.lib.MoveTo(x, y)
+
+    def LeftClick(self) -> float:
+        return self.lib.LeftClick()
